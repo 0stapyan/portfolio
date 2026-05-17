@@ -1,0 +1,43 @@
+name: build and test
+
+on:
+  push:
+    branches: 
+      - main
+      - dev
+      - priority-queue
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+          
+      - name: Restore dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --no-restore
+        
+      - name: Run Dev Tests
+        if: github.ref == 'refs/heads/dev'
+        run: dotnet test --filter "Category=WithoutTraffic"
+
+      - name: Run Additional Tests
+        if: github.ref == 'refs/heads/additional'
+        run: dotnet test --filter "Category=WithTraffic"
+
+      - name: Run PriorityQueue Tests
+        if: github.ref == 'refs/heads/priority-queue'
+        run: dotnet test --filter "FullyQualifiedName=PathFinderTests.PriorityQueueTests"
+
+      - name: Run Main Tests
+        if: github.ref == 'refs/heads/main' || github.event_name == 'pull_request'
+        run: dotnet test

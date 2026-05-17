@@ -1,0 +1,15 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AList_00601_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F6d2342c247c64eb7a9b3702e481e4443f83e00_003Fbf_003F9a6d6c6b_003FList_00601_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003APriorityQueue_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FSourcesCache_003Fc3faa091489261299a8b80fe7ebc8748dc845333ea3af4817cc6458baf826_003FPriorityQueue_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AQueue_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FSourcesCache_003F23bf52e55c41edd798e8bb8713341ad248bf64ffcd6289f57839eaf769f95a_003FQueue_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=980890a4_002D0e16_002D46f0_002Db295_002D0284a4ac1649/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestBreadthFirstSearch" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::FB2C97D5-F2CC-4EA4-9BCB-34EA7FB022D6::net9.0::PathFinderTests.PathFinderTests.TestBreadthFirstSearch&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::FB2C97D5-F2CC-4EA4-9BCB-34EA7FB022D6::net9.0::PathFinderTests.PathFinderTests.TestDijkstraUnweighted&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::FB2C97D5-F2CC-4EA4-9BCB-34EA7FB022D6::net9.0::PathFinderTests.PathFinderTests.TestAStarUnweighted&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::FB2C97D5-F2CC-4EA4-9BCB-34EA7FB022D6::net9.0::PathFinderTests.PathFinderTrafficTests.TestAStarWeighted&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::FB2C97D5-F2CC-4EA4-9BCB-34EA7FB022D6::net9.0::PathFinderTests.PathFinderTrafficTests.TestDijkstraWeighted&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::FB2C97D5-F2CC-4EA4-9BCB-34EA7FB022D6::net9.0::PathFinderTests.PathFinderTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::FB2C97D5-F2CC-4EA4-9BCB-34EA7FB022D6::net9.0::PathFinderTests.PriorityQueueTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
