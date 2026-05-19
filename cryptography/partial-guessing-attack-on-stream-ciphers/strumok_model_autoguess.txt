@@ -1,0 +1,151 @@
+# Strumok-512 cipher model for Autoguess
+
+variables
+
+S_0
+S_1
+S_2
+S_3
+S_4
+S_5
+S_6
+S_7
+S_8
+S_9
+S_10
+S_11
+S_12
+S_13
+S_14
+S_15
+S_16
+S_17
+S_18
+S_19
+S_20
+S_21
+S_22
+S_23
+S_24
+S_25
+S_26
+R_0
+R_1
+R_2
+R_3
+R_4
+R_5
+R_6
+R_7
+R_8
+R_9
+R_10
+R_11
+R_12
+Z_0
+Z_1
+Z_2
+Z_3
+Z_4
+Z_5
+Z_6
+Z_7
+Z_8
+Z_9
+Z_10
+T_R_0
+AMUL_R_0
+T_R_1
+AMUL_R_1
+T_R_2
+AMUL_R_2
+T_R_3
+AMUL_R_3
+T_R_4
+AMUL_R_4
+T_R_5
+AMUL_R_5
+T_R_6
+AMUL_R_6
+T_R_7
+AMUL_R_7
+T_R_8
+AMUL_R_8
+T_R_9
+AMUL_R_9
+T_R_10
+AMUL_R_10
+
+constraints
+
+S_16 = S_13 ^ S_11 ^ S_0
+T_R_0 = T(R_0)
+R_2 = S_15 ^ T_R_0
+AMUL_R_0 = a_mul(R_0)
+Z_0 = S_15 ^ R_1 ^ AMUL_R_0 ^ S_0
+S_17 = S_14 ^ S_12 ^ S_1
+T_R_1 = T(R_1)
+R_3 = S_16 ^ T_R_1
+AMUL_R_1 = a_mul(R_1)
+Z_1 = S_16 ^ R_2 ^ AMUL_R_1 ^ S_1
+S_18 = S_15 ^ S_13 ^ S_2
+T_R_2 = T(R_2)
+R_4 = S_17 ^ T_R_2
+AMUL_R_2 = a_mul(R_2)
+Z_2 = S_17 ^ R_3 ^ AMUL_R_2 ^ S_2
+S_19 = S_16 ^ S_14 ^ S_3
+T_R_3 = T(R_3)
+R_5 = S_18 ^ T_R_3
+AMUL_R_3 = a_mul(R_3)
+Z_3 = S_18 ^ R_4 ^ AMUL_R_3 ^ S_3
+S_20 = S_17 ^ S_15 ^ S_4
+T_R_4 = T(R_4)
+R_6 = S_19 ^ T_R_4
+AMUL_R_4 = a_mul(R_4)
+Z_4 = S_19 ^ R_5 ^ AMUL_R_4 ^ S_4
+S_21 = S_18 ^ S_16 ^ S_5
+T_R_5 = T(R_5)
+R_7 = S_20 ^ T_R_5
+AMUL_R_5 = a_mul(R_5)
+Z_5 = S_20 ^ R_6 ^ AMUL_R_5 ^ S_5
+S_22 = S_19 ^ S_17 ^ S_6
+T_R_6 = T(R_6)
+R_8 = S_21 ^ T_R_6
+AMUL_R_6 = a_mul(R_6)
+Z_6 = S_21 ^ R_7 ^ AMUL_R_6 ^ S_6
+S_23 = S_20 ^ S_18 ^ S_7
+T_R_7 = T(R_7)
+R_9 = S_22 ^ T_R_7
+AMUL_R_7 = a_mul(R_7)
+Z_7 = S_22 ^ R_8 ^ AMUL_R_7 ^ S_7
+S_24 = S_21 ^ S_19 ^ S_8
+T_R_8 = T(R_8)
+R_10 = S_23 ^ T_R_8
+AMUL_R_8 = a_mul(R_8)
+Z_8 = S_23 ^ R_9 ^ AMUL_R_8 ^ S_8
+S_25 = S_22 ^ S_20 ^ S_9
+T_R_9 = T(R_9)
+R_11 = S_24 ^ T_R_9
+AMUL_R_9 = a_mul(R_9)
+Z_9 = S_24 ^ R_10 ^ AMUL_R_9 ^ S_9
+S_26 = S_23 ^ S_21 ^ S_10
+T_R_10 = T(R_10)
+R_12 = S_25 ^ T_R_10
+AMUL_R_10 = a_mul(R_10)
+Z_10 = S_25 ^ R_11 ^ AMUL_R_10 ^ S_10
+
+known
+
+Z_0
+Z_1
+Z_2
+Z_3
+Z_4
+Z_5
+Z_6
+Z_7
+Z_8
+Z_9
+Z_10
+
+end
