@@ -1,0 +1,14 @@
+# ninja log v5
+3	1447	1779276749778794876	CMakeFiles/final_project_0stapyan.dir/refAssign/models/Player.cpp.o	f92c641e3fdb3ebc
+3	1745	1779276750077562904	CMakeFiles/final_project_0stapyan.dir/refAssign/models/MatchReport.cpp.o	b45c291f7d0cec2a
+2	1977	1779276750305780505	CMakeFiles/final_project_0stapyan.dir/refAssign/models/Match.cpp.o	6f53d2609d28cbff
+1	2142	1779276750472694668	CMakeFiles/final_project_0stapyan.dir/refAssign/logic/RefereeAssigner.cpp.o	705cc540ea91e9eb
+1	2274	1779276750608174446	CMakeFiles/final_project_0stapyan.dir/refAssign/logic/ScheduleGenerator.cpp.o	c582bbe0cb6e96e1
+0	2314	1779276750647375573	CMakeFiles/final_project_0stapyan.dir/refAssign/logic/LeagueTable.cpp.o	5a0ba55728bb93ff
+1449	2603	1779276750938755026	CMakeFiles/final_project_0stapyan.dir/refAssign/models/Referee.cpp.o	522c8235b4e42da9
+1746	3213	1779276751548125570	CMakeFiles/final_project_0stapyan.dir/refAssign/models/Team.cpp.o	bb932bd0ac1bdc94
+1977	3579	1779276751912240657	CMakeFiles/final_project_0stapyan.dir/refAssign/tests/test_assigner.cpp.o	8ea93d13193675c
+2142	3671	1779276752005881187	CMakeFiles/final_project_0stapyan.dir/refAssign/tests/test_schedule.cpp.o	a7b989173c07b2d4
+2274	3705	1779276752041124609	CMakeFiles/final_project_0stapyan.dir/refAssign/tests/test_team.cpp.o	61f1353bde16d641
+2314	3840	1779276752175945805	CMakeFiles/final_project_0stapyan.dir/refAssign/main.cpp.o	260b2da9faab0e01
+2603	3965	1779276752301743843	CMakeFiles/final_project_0stapyan.dir/refAssign/main_tests.cpp.o	7e5b30f2b3db388
