@@ -1,0 +1,60 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: bookingdb
+      POSTGRES_USER: booking
+      POSTGRES_PASSWORD: booking123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U booking -d bookingdb"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  hotel-service:
+    build:
+      context: ./src
+      dockerfile: HotelService/Dockerfile
+    ports:
+      - "5001:8080"
+    environment:
+      - ConnectionStrings__BookingDb=Host=postgres;Port=5432;Database=bookingdb;Username=booking;Password=booking123
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  booking-service:
+    build:
+      context: ./src
+      dockerfile: BookingService/Dockerfile
+    ports:
+      - "5002:8080"
+    environment:
+      - ConnectionStrings__BookingDb=Host=postgres;Port=5432;Database=bookingdb;Username=booking;Password=booking123
+      - Services__HotelService=http://hotel-service:8080
+      - Services__GuestService=http://guest-service:8080
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  guest-service:
+    build:
+      context: ./src
+      dockerfile: GuestService/Dockerfile
+    ports:
+      - "5003:8080"
+    environment:
+      - ConnectionStrings__BookingDb=Host=postgres;Port=5432;Database=bookingdb;Username=booking;Password=booking123
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
